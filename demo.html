@@ -20,10 +20,14 @@
   </div>
 
 <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.0.js'></script>
-<script type='text/javascript' src="https://rawgit.com/kinduff/limitcheckbox/master/limitcheckbox-min.js"></script>
+<script type='text/javascript' src="limitcheckbox.js"></script>
 <script type='text/javascript'>
   $(window).load(function(){
-    $('#checkboxes').limitCheckbox(3);
+    $('#checkboxes').limitCheckbox(3, {
+      callback: function() {
+        alert('All selected');      
+      }    
+    });
   })
 </script>
 </body>

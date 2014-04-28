@@ -5,7 +5,9 @@
 (function ($) {
     $.fn.limitCheckbox = function (num, options) {
         var num = num || $(this).children('input[type=checkbox]').size() - 1,
-            settings = $.extend({}, options),
+            settings = $.extend({
+              callback: function() {}
+            }, options),
             selector = this.children('input[type=checkbox]');
         selector.click(function () {
             if (!$(this).is(':checked')) {
@@ -15,6 +17,7 @@
             } else {
                 if (selector.filter(':checked').size() == num) {
                     selector.not(':checked').not(this).attr("disabled", "disabled");
+                    if (options) options.callback();
                 }
             }
         });

@@ -36,6 +36,15 @@ And then include **limitcheckbox.js**
 $('#checkboxes').limitCheckbox(3);
 ```
 
+### Callback
+```javascript
+$('#checkboxes').limitCheckbox(3, {
+  callback: function() {
+    // Options
+  }
+);
+```
+
 ## Demo
 
-[Click here](http://jsfiddle.net/kinduff/wBZk9/).
+[Click here](http://jsfiddle.net/kinduff/wBZk9/1/).
