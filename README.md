@@ -47,4 +47,4 @@ $('#checkboxes').limitCheckbox(3, {
 
 ## Demo
 
-[Click here](http://jsfiddle.net/kinduff/wBZk9/1/).
+[Click here](http://jsfiddle.net/kinduff/wBZk9/).
