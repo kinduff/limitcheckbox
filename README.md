@@ -23,10 +23,6 @@ And then include **limitcheckbox.js**
 
 5 checkboxes and I want to set a limit of 3.
 
-```javascript
-$('#checkboxes').limitCheckbox(3);
-```
-
 ```html
 <div id="checkboxes">
     <input type="checkbox" /> <!-- 1 -->
@@ -36,7 +32,10 @@ $('#checkboxes').limitCheckbox(3);
     <input type="checkbox" /> <!-- 5 -->
 </div>
 ```
+```javascript
+$('#checkboxes').limitCheckbox(3);
+```
 
 ## Demo
 
-[Click here]().
+[Click here](http://jsfiddle.net/kinduff/wBZk9/).
