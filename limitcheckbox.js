@@ -4,18 +4,19 @@
  */
 (function ($) {
     $.fn.limitCheckbox = function (num, options) {
-        var num = num || $(this).children('input[type=checkbox]').size() - 1,
+        var selector = this.children('input[type=checkbox]');
+        var num = num || selector.size() - 1,
             settings = $.extend({
               callback: function() {}
-            }, options),
-            selector = this.children('input[type=checkbox]');
+            }, options);
         selector.click(function () {
+            checked = selector.filter(':checked').size()
             if (!$(this).is(':checked')) {
-                if (selector.filter(':checked').size() < num) {
+                if (checked < num) {
                     selector.not(this).removeAttr("disabled");
                 }
             } else {
-                if (selector.filter(':checked').size() == num) {
+                if (checked == num) {
                     selector.not(':checked').not(this).attr("disabled", "disabled");
                     if (options) options.callback();
                 }
