@@ -4,7 +4,7 @@
  */
 (function ($) {
     $.fn.limitCheckbox = function (num, options) {
-        var selector = this.children('input[type=checkbox]');
+        var selector = this.find('input[type=checkbox]');
         var num = num || selector.size() - 1,
             settings = $.extend({
               callback: function() {}
