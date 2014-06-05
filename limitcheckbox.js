@@ -22,5 +22,7 @@
                 }
             }
         });
+        checked = selector.filter(':checked').size();
+        if (checked == num) selector.not(':checked').attr("disabled", "disabled")
     };
 }(jQuery));
