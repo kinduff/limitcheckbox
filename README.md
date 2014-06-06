@@ -9,24 +9,33 @@ This is a jQuery plugin that offers an easy way to setup a limit to a checkbox c
 
 Add this line to your application's Gemfile:
 
-    gem 'limitcheckbox'
+```bash
+gem 'limitcheckbox'
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install limitcheckbox
+```bash
+$ gem install limitcheckbox
+```
 
 Then include **limitcheckbox.js** in your javascript file
 
-    //= require limitcheckbox
+```javascript
+//= require limitcheckbox
+```
 
 Or include the minified version
 
-    //= require limitcheckbox-min
-
+```javascript
+//= require limitcheckbox-min
+```
 
 ## Manual Install
 
