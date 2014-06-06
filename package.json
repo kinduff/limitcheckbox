@@ -13,13 +13,13 @@
     "jquery",
     "plugin"
   ],
-  "author": "Alejandro Rodriguez",
+  "author": "Kinduff",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kinduff/limitcheckbox/issues"
   },
   "homepage": "https://github.com/kinduff/limitcheckbox",
   "devDependencies": {
-
+    "grunt-contrib-copy": "^0.5.0"
   }
 }
