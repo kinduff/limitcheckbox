@@ -1,0 +1,25 @@
+{
+  "name": "limitcheckbox",
+  "version": "0.0.1",
+  "description": "jQuery plugin to limit checkbox selection easy.",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kinduff/limitcheckbox.git"
+  },
+  "keywords": [
+    "checkbox",
+    "limit",
+    "jquery",
+    "plugin"
+  ],
+  "author": "Alejandro Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kinduff/limitcheckbox/issues"
+  },
+  "homepage": "https://github.com/kinduff/limitcheckbox",
+  "devDependencies": {
+
+  }
+}

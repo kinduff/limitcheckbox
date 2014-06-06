@@ -13,7 +13,7 @@ Make sure to include jQuery in your page.
 <script src="jquery.min.js"></script>
 ```
 
-And then include **limitcheckbox.js**
+And then include **limitcheckbox.js**. There unminified version it's located at the `src` folder. The minified version its located at the `build` folder. 
 
 ```html
 <script src="js/limitcheckbox-min.js"></script>
@@ -44,6 +44,8 @@ $('#checkboxes').limitCheckbox(3, {
   }
 );
 ```
+
+Notice that **limitcheckbox.js** will check the checkboxes from your main element when called in order to disable if they're already *checked*.
 
 ## Demo
 
